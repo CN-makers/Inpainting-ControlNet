@@ -1,0 +1,27 @@
+python: can't open file 'tuto': [Errno 2] No such file or directory
+logging improved.
+No module 'xformers'. Proceeding without it.
+ControlLDM: Running in eps-prediction mode
+DiffusionWrapper has 865.91 M params.
+making attention of type 'vanilla' with 512 in_channels
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+making attention of type 'vanilla' with 512 in_channels
+Loaded model config from [./models/cldm_v21.yaml]
+Loaded state_dict from [./models/control_sd21_editing_ini.ckpt]
+Traceback (most recent call last):
+  File "tutorial_train_sd21.py", line 24, in <module>
+    model.load_state_dict(load_state_dict(resume_path, location='cpu'))
+  File "/home/cn/anaconda3/envs/ldm2/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1590, in load_state_dict
+    load(self)
+  File "/home/cn/anaconda3/envs/ldm2/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1578, in load
+    load(child, prefix + name + '.')
+  File "/home/cn/anaconda3/envs/ldm2/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1578, in load
+    load(child, prefix + name + '.')
+  File "/home/cn/anaconda3/envs/ldm2/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1578, in load
+    load(child, prefix + name + '.')
+  [Previous line repeated 3 more times]
+  File "/home/cn/anaconda3/envs/ldm2/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1574, in load
+    module._load_from_state_dict(
+  File "/home/cn/anaconda3/envs/ldm2/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1527, in _load_from_state_dict
+    for key in state_dict.keys():
+KeyboardInterrupt
